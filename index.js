@@ -21,6 +21,15 @@ app.use("/api/books", booksRoute);
 app.use("/api/transactions", transactionsRoute);
 app.use("/api/user", UserRoute);
 
+
+// demo 
+app.get("/", (req,res) =>{
+  res.send({
+    success:true,
+    Message:"Server is working fine"
+  })
+})
+
 // Connect to MongoDB
 mongoose
   .connect(process.env.MONGO_URI, {
