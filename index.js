@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
     message: "Server is working fine",
     guide: {
       API: {
-        base_url: "http://localhost:3000/api",
+        base_url: "https://bookstore-hazel-three.vercel.app/api",
         endpoints: [
           {
             method: "GET",
